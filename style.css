@@ -1,0 +1,141 @@
+/* style.css */
+:root {
+    --couleur-principale: #D40000; /* Rouge intense pour le métal chauffé ou l'action */
+    --couleur-secondaire: #2c3e50; /* Gris anthracite/noir pour le métal brut */
+    --couleur-texte: #333;
+    --couleur-fond: #f4f4f4;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: blue; /* var(--couleur-fond) */
+    background-image: url("soudeur.jpg");
+    background-repeat: no-repeat;
+    background-size: 1500px;
+    --couleur-texte: #333;  /*  */
+    color: var(--couleur-texte) ; /* */
+    line-height: 1.6;
+}
+
+/* --- En-tête (Header) et Navigation --- */
+header {
+    background: var(--couleur-secondaire);
+    color: white;
+    padding: 1rem 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: var(--couleur-principale);
+    border-radius: 4px;
+}
+
+/* --- Boutons et Actions --- */
+.btn {
+    display: inline-block;
+    background-color: var(--couleur-principale);
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #a70000;
+}
+
+/* --- Sections Générales --- */
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: var(--couleur-secondaire);
+    text-align: center;
+    margin-bottom: 25px;
+    border-bottom: 3px solid var(--couleur-principale);
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* --- Pied de Page (Footer) --- */
+footer {
+    background: var(--couleur-secondaire);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+    font-size: 0.9rem;
+}
+
+footer p, footer a {
+    color: white;
+    text-decoration: none;
+}
+
+/* --- Adaptation Mobile (Media Query) --- */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Simplification pour la démo, on utiliserait un menu burger en prod */
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    .service-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+h2{
+    color: ;
+}
+
+h1{
+    color: brown;
+}

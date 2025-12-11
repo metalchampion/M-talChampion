@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commander & Payer | Métal Champion</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .payment-box { background: #f9f9f9; border: 1px solid #ddd; padding: 20px; border-radius: 8px; margin-bottom: 20px; }
+        .payment-box h3 { color: var(--couleur-principale); margin-bottom: 10px; }
+        .note { background: #fff3cd; border: 1px solid #ffeeba; padding: 15px; border-radius: 4px; color: #856404; margin-bottom: 20px; }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><a href="index.html">Métal Champion</a></div>
+            <div class="nav-links">
+                <a href="index.html">Accueil</a>
+                <a href="realisations.html">Nos Réalisations</a>
+                <a href="contact.html">Contact</a>
+                <a href="commande.html" class="btn">Commander & Payer</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h2>Commander & Effectuer Vos Paiements</h2>
+        <p style="text-align: center; margin-bottom: 30px;">Utilisez cette page pour régler votre acompte après acceptation du devis ou pour commander un service standard rapide.</p>
+
+        <section class="payment-box">
+            <h3>1. Paiement par Mobile Money (Recommandé)</h3>
+            <div class="note">
+                **IMPORTANT :** Envoyez d'abord le montant convenu via Mobile Money, puis remplissez le formulaire ci-dessous pour valider votre transaction.
+            </div>
+            <p>
+                **Numéro de Paiement (Togocel / Moov) :** <span style="font-size: 1.2rem; color: var(--couleur-principale);">**92 37 37 66**</span><br>
+                *(Nom du bénéficiaire : Métal Champion)*
+            </p>
+
+            <form action="#" method="POST" style="margin-top: 20px;">
+                <h4>Validation de Transaction Mobile Money</h4>
+                <div class="form-group">
+                    <label for="facture">Numéro de Devis / Facture</label>
+                    <input type="text" id="facture" name="facture" required>
+                </div>
+                <div class="form-group">
+                    <label for="montant">Montant Payé (CFA)</label>
+                    <input type="number" id="montant" name="montant" required>
+                </div>
+                <div class="form-group">
+                    <label for="tel_paiement">N° de Téléphone Utilisé pour le Paiement</label>
+                    <input type="tel" id="tel_paiement" name="tel_paiement" required>
+                </div>
+                <button type="submit" class="btn">Confirmer le Paiement</button>
+            </form>
+        </section>
+
+        <section class="payment-box">
+            <h3>2. Virement Bancaire</h3>
+            <p>Pour les gros montants ou les entreprises, vous pouvez procéder par virement bancaire.</p>
+            <p style="background: #eee; padding: 10px; border-radius: 4px;">
+                **Banque :** XXXXX<br>
+                **Nom du Compte :** Métal Champion SARL<br>
+                **RIB :** XXXXX-XXXXX-XXXXX
+            </p>
+            <p>Veuillez nous notifier le virement par email à <a href="mailto:comptabilite@metalchampion.com">comptabilite@metalchampion.com</a>.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Métal Champion | Chaudronnerie, Soudure & Tuyauterie</p>
+        <p>Contacts: (+228) 92 37 37 66 / 97 23 73 53 | Sanguera-Klémé, Lomé</p>
+        <p>Tous droits réservés © 2024</p>
+    </footer>
+</body>
+</html>

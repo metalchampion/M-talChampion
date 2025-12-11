@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Devis | Métal Champion</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
+        .form-group { margin-bottom: 15px; }
+        .form-group label { display: block; margin-bottom: 5px; font-weight: bold; }
+        .form-group input, .form-group textarea { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; }
+        .contact-info p { margin-bottom: 15px; }
+        @media (max-width: 768px) {
+            .contact-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><a href="index.html">Métal Champion</a></div>
+            <div class="nav-links">
+                <a href="index.html">Accueil</a>
+                <a href="realisations.html">Nos Réalisations</a>
+                <a href="contact.html">Contact</a>
+                <a href="commande.html" class="btn">Commander & Payer</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h2>Contactez-Nous et Demandez Votre Devis</h2>
+        <p style="text-align: center; margin-bottom: 30px;">Notre équipe répondra à toutes vos questions dans les plus brefs délais.</p>
+
+        <div class="contact-grid">
+            <form action="#" method="POST">
+                <h3>Formulaire de Demande</h3>
+                <div class="form-group">
+                    <label for="nom">Nom & Prénom</label>
+                    <input type="text" id="nom" name="nom" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="tel">Téléphone</label>
+                    <input type="tel" id="tel" name="tel" placeholder="+228 9X XX XX XX" required>
+                </div>
+                <div class="form-group">
+                    <label for="objet">Objet de la Demande</label>
+                    <input type="text" id="objet" name="objet" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message / Détail du Projet</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn">Envoyer ma Demande de Devis</button>
+            </form>
+
+            <div class="contact-info">
+                <h3>Coordonnées Directes</h3>
+                <p>
+                    **Téléphones :**<br>
+                    <a href="tel:+22892373766">+228 92 37 37 66</a><br>
+                    <a href="tel:+22897237353">+228 97 23 73 53</a>
+                </p>
+                <p>
+                    **Email :**<br>
+                    <a href="mailto:cstmetalchapion@gmail.com">cstmetalchampion@gmail.com</a> <!--contact@metalchampion.com -->
+                </p>
+                <p>
+                    **Adresse :**<br>
+                    **Sanguera-Klémé, non loin de l’EPP Sanguera-kleme, Lomé, Togo.**
+                </p>
+                <p>
+                    **Horaires :**<br>
+                    Du Lundi au Vendredi : 8h00 - 17h00
+                </p>
+                <div style="margin-top: 20px;">
+                    
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Métal Champion | Chaudronnerie, Soudure & Tuyauterie</p>
+        <p>Contacts: +228 92 37 37 66 / 97 23 73 53 | Sanguera-Klémé, Lomé</p>
+        <p>Tous droits réservés © 2024</p>
+    </footer>
+</body>
+</html>
